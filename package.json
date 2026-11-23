@@ -1,0 +1,42 @@
+{
+ "name": "daftar-game-rexel",
+ "version": "1.0.0",
+ "description": "Daftar Game Rexel",
+ "author": "Rexel Game",
+ "main": "main.js",
+ "scripts": {
+  "start": "electron .",
+  "dist": "electron-builder"
+ },
+ "devDependencies": {
+  "electron": "^30.0.0"
+ },
+ "build": {
+  "appId": "com.rexelgame.daftargame",
+  "productName": "Daftar Game Rexel",
+  "directories": {
+   "output": "dist"
+  },
+  "win": {
+   "target": "nsis",
+   "icon": "icon.ico"
+  },
+  "nsis": {
+   "oneClick": true,
+   "perMachine": false,
+   "createDesktopShortcut": "always",
+   "createStartMenuShortcut": true,
+   "shortcutName": "Daftar Game Rexel",
+   "installerIcon": "icon.ico",
+   "uninstallerIcon": "icon.ico"
+  },
+  "files": [
+   "main.js",
+   "index.html",
+   "package.json",
+   "icon.ico",
+   "icon.png",
+   "logo.png"
+  ]
+ }
+}
